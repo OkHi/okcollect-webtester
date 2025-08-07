@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OkHi Address Creator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://dev-api.okhi.io/v5/okweb/v2?clientKey=13478534-2df8-4771-9ddd-34c1a49283f4&branchId=SS3RrryAAT"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Address Creator</h1>
+            <p class="subtitle">Create your digital address with OkHi</p>
+        </header>
+
+        <main class="main-content">
+            <div class="form-card">
+                <h2 class="section-title">User Information</h2>
+                <form id="userForm" class="user-form">
+                    <div class="form-group">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" id="firstName" name="firstName" class="form-input" value="Evans" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="lastName" class="form-label">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" class="form-input" value="Mutai" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" value="+254721856492" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" value="evans@okhi.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="appUserId" class="form-label">App User ID</label>
+                        <input type="text" id="appUserId" name="appUserId" class="form-input" value="user_123456" required>
+                    </div>
+                    
+                    <button type="button" id="createAddressBtn" class="create-btn">
+                        <span class="btn-text">Create Address</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="address-card">
+                <h2 class="section-title">Address</h2>
+                <div id="address"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
